@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligpeg</title>
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imagens/PERFIL.png" type="image/x-icon">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="{% static 'recipes/css/estilo.css' %}">
+
+    <!-- Float Button -->
+    <div class="whats">
+        <a href=" https://wa.me/5584996006663?text=ol%C3%A1%2C+quero+fazer+um+pedido" target="_blank">
+     
+        <img src="{% static 'recipes/imagens/whatsapp-logo-whatsapp-icon.webp' %}" width="120" alt="">
+       </a>
+    </div>
+
+   
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <header>
+        <!-- <a href="#" class="logo">LigPeg</a> --> 
+  
+        <img src="{% static 'recipes/imagens/LOGO_PNGBLACK.png' %}" class="logo-img" width ='400'>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="cardapio">Menu</a></li>       
+            <li><a href="login">Login</a></li>
+            <li><a href="contato">Contato</a></li> 
+            <!-- Modo escuro -->
+          <!--<div class="bx bx-moon" id="darkmode"></div>-->
+        </ul>
+    </header>
+
+    <!-- Página Inicial -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1> LigPeg,
+                A melhor pizzaria da região!</h1>
+            <h2>Escolha logo o seu <br> sabor</h2>
+            <a href="cardapio" class="btn">Veja o Menu</a>
+        </div>
+        <div class="home-img">
+
+            <img src="{% static 'recipes/imagens/foto_choco.png' %}" class="">
+        </div>
+    </section>
+
+    
+    <!-- Avaliações -->
+    <div class="heading">
+    <div class="s-box">
+        <div class="testimonials">
+          <div class="inner">
+            <h1>Avaliações</h1>
+            <div class="border"></div>
+            <p class="p1">Avaliações dos nossos clientes sobre o local!</p>
+            <div class="row">
+              <div class="col">
+                <div class="testimonial">
+                  <img src="{% static 'recipes/imagens/p1.png' %}" alt="">
+                 
+                  <div class="name">Helber Wagner</div>
+                  <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                  </div>
+                  <p class="paragrafo">
+                    Melhor pizzaria da região! Levei minha conjuge, ela adorou, o atendimento dispensa comentários.
+                </b>
+                     E ainda fiz amigos para falar sobre a camada de enlace da materia de Redes de computadores sobre qual leciono no IFRN.
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="testimonial">
+                  <img src="{% static 'recipes/imagens/p2.png' %}" alt="">
+                  <div class="name">Tatiana Sorretino</div>
+                  <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                  </div>
+                  <p class="paragrafo">
+                    Pizzaria massa! Fui com minhas colegas da aula de dança, recomendo... 
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="testimonial">
+                  <img src="{% static 'recipes/imagens/p3.png' %}" alt="">
+                
+                  <div class="name">Eberton marinho</div>
+                  <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                  </div>
+                  <p class="paragrafo">
+                   Amo muito a comida desse restaurante, principalmente os pasteis! saem super rapidos, amo y amo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+   
+
+    <!-- Cadastro -->
+    <section class="signin" id="signin">
+        <div class="heading">
+            <span>Cadastro</span>
+            <h2>Venha ser nosso cliente!</h2>
+        </div>
+
+        <div class="signin-container">
+            <div class="heading"></div>
+            <div class="box">
+          
+            <img src="{% static 'recipes/imagens/franguito.png' %}"width="50%" alt="">
+            <h3 id="cadastro">Faça seu Cadastro e comece a fazer seus pedidos.</h3>
+            <div class="btn-size">
+                <a href="login.html#" class="btn">Cadastre-se</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+   
+    <!-- Contato  -->
+    <section class="connect">
+        <div class="connect-text">
+            <span>Dê-nos a sua opinião!</span>
+            <h2>Fale Conosco!</h2>
+        </div>
+        <a href="contato" class="btn" target="_blank">Contate-nos</a>
+    </section>
+
+    <!-- Rodapé -->
+    <!-- Contato -->
+    <section class="contact" id="contact">
+        <div class="contact-box">
+            <h3>LigPeg.</h3>
+            <span>Siga a gente nas redes sociais!</span>
+            <div class="social">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i> </a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+       
+             
+        </div>
+        <div class="contact-box address">
+            <h3>Contato</h3>
+            <i class="bx bxs-map"><span>Av. Baía dos Golfinhos, 213 - Praia da Pipa, Tibau do Sul - RN, 59179-000</span></i>
+            <i class="bx bxs-phone"><span> (84) 99600-6663</span></i>
+            <i class="bx bxs-envelope"><span>contatoligpeg@gmail.com</span></i>
+
+        </div>
+    </section>
+
+    <!-- Direitos -->
+    <div class="copyright">
+        <p>&#169; Pizzaria & Pastelaria LigPeg. Todos os Direitos Reservados.</p>
+    </div>
+
+
+    <!-- JS -->
+             
+    <script src="{% static 'recipes/js/principal.js' %}"></script>
+</body>
+</html>

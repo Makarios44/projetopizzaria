@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS  -->
+    <link rel="stylesheet" href="{% static 'recipes/css/estilopagamento.css' %}">
+</head>
+<body>
+
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Confirmação</h3>
+
+                <div class="inputBox">
+                    <span>Nome Completo:</span>
+                    <input type="text" placeholder="Makarios Mulenga">
+                </div>
+                <div class="inputBox">
+                    <span>Email:</span>
+                    <input type="email" placeholder="mmakarios44@gmail.com">
+                </div>
+                <div class="inputBox">
+                    <span>Endereço:</span>
+                    <input type="text" placeholder="rua dos pardais, numero 1">
+                </div>
+                <div class="inputBox">
+                    <span>Distrito:</span>
+                    <input type="text" placeholder="pipa">
+                </div>
+
+                
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Forma de Pagamento</h3>
+
+                <div class="inputBox">
+                    <span>Cartões: </span>
+                    <img src="imagens/pagamentoimg/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    
+                    <span>Forma de pagamento:</span>
+                    <input type="text" placeholder="Cartão, pix, dinheiro...">
+                </div>
+                <div class="inputBox">
+                    <span>Troco para quanto?:</span>
+                    <input type="text" placeholder="se sua opção não foi dinheiro ingore">
+                </div>
+                
+                
+
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="Prosseguir" class="submit-btn">
+
+    </form>
+
+</div>    
+    
+</body>
+</html>

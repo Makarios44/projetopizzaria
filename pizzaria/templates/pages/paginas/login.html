@@ -1,0 +1,75 @@
+{% include 'pages/partials/head.html'  %}
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== Icons CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="{% static 'recipes/css/estilocadlog.css' %}">
+    <link rel="shortcut icon" href=" {% static 'recipes/imagens/perfil.png' %}"  type="image/x-icon">
+    <title>Login & Cadastro</title>
+</head>
+<body>
+
+      <!-- ADD Barra de Navegação -->
+      <header>
+        <!-- <a href="#" class="logo">Ligpeg</a> --> 
+        <img src=" {% static 'recipes/imagens/LOGO_PNGBLACK.png' %}"alt="logotipo" class="logo-img">
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="home">Inicio</a></li>
+            <li><a href="cardapio">Menu</a></li>
+            <li><a href="contato">Contato</a></li>
+        </ul>
+    </header>
+    
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Digite seu email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Digite sua senha" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Lembrar-me</label>
+                        </div>
+                        
+                        <a href="#" class="text">Esqueceu a senha?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Login">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Não tem cadastro?
+                        <li><a href="cadastro" class="text signup-link">Cadastre-se</a></li>
+                    </span>
+                </div>
+            </div>
+
+           
+    <script src="assets/js/cadlog.js"></script>
+
+</body>
+</html>

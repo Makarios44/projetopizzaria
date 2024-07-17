@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="{% static 'recipes/css/cadastro.css' %}">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms">
+            
+
+            <!-- Formulario de cadastro -->
+            <div class="form signup">
+                <span class="title">Cadastro</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Digite seu nome" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Digite seu email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+
+                    <form action="#"> 
+                        <div class="input-field">
+                            <input type="tel" placeholder="Digite seu Telefone" required>
+                            <i class="uil uil-phone icon"></i>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="text" placeholder="Digite seu CEP" required>
+                            <i class="uil uil-map-marker icon"></i>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="text" placeholder="Digite seu Endereço" required>
+                            <i class="uil uil-map-marker icon"></i>
+                        </div>       
+
+                        <div class="input-field">
+                            <input type="text" placeholder="Digite sua Cidade" required>
+                            <i class="uil uil-map-marker icon"></i>
+                        </div>       
+
+                        <div class="input-field">
+                            <input type="text" placeholder="Digite seu Bairro" required>
+                            <i class="uil uil-map-marker icon"></i>
+                        </div>       
+
+                        <div class="input-field">
+                            <input type="text" placeholder="Digite seu Estado" required maxlength="2" minlength="2">
+                            <i class="uil uil-map-marker icon"></i>
+                        </div>      
+
+                        <div class="input-field"> 
+                            <input type="password" class="password" placeholder="Digite seu CPF" required>
+                            <i class="uil uil-lock icon"></i>
+                        </div>
+
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Digite sua senha" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirme a senha" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">Eu aceito todos os termos e condições</label>
+                        </div>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Cadastrar">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">É cadastrado?
+                        <a href="#" class="text login-link">Faça seu Login</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'recipes/js/cadlog.js' %} "></script>
+
+</body>
+</html>

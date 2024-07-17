@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardapio</title>
+
+    <link rel="stylesheet" href="{% static 'recipes/css/estilocardapio.css' %}">
+
+    <link rel="shortcut icon" href="imagens/PERFIL.png" type="image/x-icon">
+</head>
+<body>
+
+     <!-- ADD Barra de Navegação -->
+     <header>
+        <!-- <a href="#" class="logo">LigPeg</a> --> 
+        <img src="{% static 'recipes/imagens/LOGO_PNGBLACK.png' %}" class="logo-img" width ='400'>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="home">Inicio</a></li>
+
+            <li><a href="cadastro">Cadastro</a></li>
+            <li><a href="contato">Contato</a></li>
+        </ul>
+    </header>
+
+    <!-- Cardápio -->
+    <div class="wrapper">
+        <div class="title">
+            <h4><span></span>Nosso Cardápio</h4>
+        </div>
+        <div class="menu">
+            <div class="single-menu">
+                <img src="{% static 'recipes/imagens/vegetariana.jpg' %}" alt="">
+             
+                <div class="menu-content">
+                    <h4>Italiana <span>$39.00</span></h4>
+                    <p>Tomate, Manjericão, Quatro Queijos e Borda Recheada.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="{% static 'recipes/imagens/vegetariana.jpg' %}" alt="">
+                <div class="menu-content">
+                    <h4>Vegana<span>$44.00</span></h4>
+                    <p>Massa pan, tomates com pedaços de champignon, pimentão, cebola, azeitonas e exclusiva mussarela PizzaTec.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                 <img src="{% static 'recipes/imagens/vegetariana.jpg' %}" alt="">
+                <div class="menu-content">
+                    <h4>Pepperoni<span>$42.00</span></h4>
+                    <p>Pepperoni, molho de tomate com cebola roxa.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="{% static 'recipes/imagens/vegetariana.jpg' %}" alt="">
+                <div class="menu-content">
+                    <h4>PAULISTA<span>$35.00</span></h4>
+                    <p>mussarela, salame italiano e catupiry.
+                        </p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="{% static 'recipes/imagens/vegetariana.jpg' %}" alt="">
+                <div class="menu-content">
+                    <h4>Frango<span>$33.00</span></h4>
+                    <p>Frango desfiado, molho com rodelas de tomate, azeitonas e catupiry.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="{% static 'recipes/imagens/vegetariana.jpg' %}" alt="">
+                <div class="menu-content">
+                    <h4>NORDESTINA<span>$40.00</span></h4>
+                    <p>mussarela, carne de sol, ovos e cebola. 
+                        </p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="{% static 'recipes/imagens/vegetariana.jpg' %}" alt="">
+                <div class="menu-content">
+                    <h4>Especial M&M's<span>$37.00</span></h4>
+                    <p>Pizza doce recheada com M&M e chocolate ao leite/meio amargo e morangos.</p>
+                </div>
+            </div>
+
+            <div class="single-menu">
+                <img src="{% static 'recipes/imagens/vegetariana.jpg' %}" alt="">
+                <div class="menu-content">
+                    <h4>LOUCURA DE SABORES<span>$31.00</span></h4>
+                    <p>nutella, M&M´s e mussarela
+                    </p>
+                </div>
+            </div>
+                 
+            <div class="single-menu">
+                <img src="{% static 'recipes/imagens/vegetariana.jpg' %}" alt="">
+                <div class="menu-content">
+                    <h4>PASTEL MISTÃO<span>$38.00</span></h4>
+                    <p> mussarela, carne moída, presunto, orégano e azeitona verde.</p>
+                </div>
+            </div>
+                 
+            <div class="single-menu">
+                <img src="{% static 'recipes/imagens/vegetariana.jpg' %}" alt="">
+                <div class="menu-content">
+                    <h4>FRANGO COM CATUPIRY<span>$36.00</span></h4>
+                    <p>mussarela, filé de camarão ao molho de tomate caseiro, ervas finas e catupiry
+                    </p>
+                </div>
+            </div>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="compra" class="btn">
+        <p id="btn-text">Faça seu Pedido!</p>
+    </a>
+
+     <div class="copyright">
+        <p>; LigPeg Pizzaria & Pastelaria Todos os Direitos Reservados.</p>
+    </div>
+</body>
+</html>
